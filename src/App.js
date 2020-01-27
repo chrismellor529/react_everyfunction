@@ -6,7 +6,7 @@ class App extends React.Component{
     render() {
         return (
             <div className="App">
-                <h1>Hello React !</h1>
+                <h1 style={{color: "red"}}>Hello React !</h1>
                 <input type="text" placeholder="Please enter keywords..."/>
                 <ul>
                     <li>Apples {5+5} qty</li>

@@ -39,8 +39,14 @@ class Car extends React.Component{
     }
     render(){
         const title = this.props.car;
+        const mystyle = {
+            color: "white",
+            backgroundColor: "DodgerBlue",
+            padding: "10px",
+            fontFamily: "Arial"
+        };
         return(
-            <div>
+            <div style={mystyle}>
                 <h1>{this.state.brand}</h1>
                 <p>
                     <span>It is a {this.state.color}</span>
@@ -54,7 +60,7 @@ class Car extends React.Component{
 
                 </p>
                 <p id="div2"></p>
-                <button onClick={(ev) => this.shooter("Goal", ev)}>Take the shot !</button>
+                <button onClick={(ev) => this.shooter("Goal", ev)} style={{backgroundColor: "lightblue"}}>Take the shot !</button>
             </div>
         );
     }
