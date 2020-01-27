@@ -5,6 +5,7 @@ import './App.css';
 class Car extends React.Component{
     constructor(props) {
         super(props);
+        this.shoot = this.shoot.bind(this);
         this.state = {
             brand: "Ford",
             model: "Mustang",
@@ -34,6 +35,9 @@ class Car extends React.Component{
     changeColor = () => {
         this.setState({brand: "Toyota"});
     };
+    shoot() {
+        alert(this);
+    }
     render(){
         const title = this.props.car;
         return(
@@ -51,6 +55,7 @@ class Car extends React.Component{
 
                 </p>
                 <p id="div2"></p>
+                <button onClick={this.shoot}>Take the shot !</button>
             </div>
         );
     }
