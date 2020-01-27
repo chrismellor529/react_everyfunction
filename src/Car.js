@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './mysass.scss';
 
 class Car extends React.Component{
     constructor(props) {
